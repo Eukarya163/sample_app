@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :lists
   get 'lists/new'
   get 'lists' => 'lists#create'
   get 'lists/index'
